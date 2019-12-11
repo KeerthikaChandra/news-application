@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './card.style.css';
+import './card1.styles.css'
 
-export const Card = (props) => (
+export const Card1 = (props) => (
 
     <div className='card-container'>
         <h3>{props.item.title}</h3>
@@ -11,9 +11,9 @@ export const Card = (props) => (
           <p>
             {props.item.content}
           </p>       
-         
+          <a href={props.item.url}>Read More</a>
           
     </div>
 )
     
-export default Card;
+export default Card1;

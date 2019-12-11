@@ -3,15 +3,19 @@ import React from 'react';
 import Card from '../card/card.component'
 
 import './card-list.styles.css';
+import {Link} from 'react-router-dom';
 
-export const CardList = (props) => {
+ const CardList = (props) => {
     
     return ( 
     <div className='card-list'>
     {         
               props.articles.map((item,idx) =>
-             <Card key={idx} item={item} /> )
+    <Link to={'/new'}>{<Card key={idx} item={item} /> }</Link>
+             )
           }
     </div>
     );
 };
+
+export default CardList;
