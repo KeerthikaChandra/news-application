@@ -4,6 +4,7 @@ import CardList from '../card-list/card-list'
 
 
 class HomePage extends React.Component  {
+    //this is a homepage
     constructor(){
         super()
 
